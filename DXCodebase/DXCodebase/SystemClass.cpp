@@ -6,6 +6,7 @@ SystemClass::SystemClass()
 	m_Graphics = 0;
 }
 
+
 SystemClass::SystemClass(const SystemClass& other)
 {
 	//
