@@ -191,4 +191,14 @@ void ModelClass::RenderBuffers(ID3D11DeviceContext* deviceContext)
 	return;
 }
 
+void GameObject::tick(GameData* _GD)
+{
+	
+}
+
+void GameObject::draw(ID3D11DeviceContext* _DD)
+{
+	
+}
+
 

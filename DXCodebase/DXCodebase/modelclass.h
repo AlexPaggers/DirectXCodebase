@@ -3,19 +3,12 @@
 #ifndef _MODELCLASS_H_
 #define _MODELCLASS_H_
 
-
-//////////////
-// INCLUDES //
-//////////////
 #include <d3d11.h>
 #include <directxmath.h>
+#include "GameObject.h"
 using namespace DirectX;
 
-
-////////////////////////////////////////////////////////////////////////////////
-// Class name: ModelClass
-////////////////////////////////////////////////////////////////////////////////
-class ModelClass
+class ModelClass : public GameObject
 {
 private:
 	struct VertexType
