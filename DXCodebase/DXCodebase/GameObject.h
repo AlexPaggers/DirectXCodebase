@@ -14,7 +14,7 @@ public:
 	~GameObject();
 
 	void tick(GameData* _GD);
-	virtual void draw(ID3D11DeviceContext* _DD);
+	void draw(ID3D11DeviceContext* _DD);
 
 	//getters
 	Vector3		GetPos() { return m_pos; }

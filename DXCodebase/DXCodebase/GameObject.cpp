@@ -17,6 +17,7 @@ GameObject::GameObject()
 
 GameObject::~GameObject()
 {
+
 }
 
 void GameObject::tick(GameData* _GD)
@@ -26,4 +27,5 @@ void GameObject::tick(GameData* _GD)
 
 void GameObject::draw(ID3D11DeviceContext * _DD)
 {
+
 }

@@ -1,4 +1,5 @@
 #include "modelclass.h"
+#include <d3d10.h>
 
 ModelClass::ModelClass()
 {
@@ -9,6 +10,7 @@ ModelClass::ModelClass()
 
 ModelClass::ModelClass(const ModelClass& other)
 {
+	
 }
 
 
@@ -191,12 +193,12 @@ void ModelClass::RenderBuffers(ID3D11DeviceContext* deviceContext)
 	return;
 }
 
-void GameObject::tick(GameData* _GD)
+void tick(GameData* _GD)
 {
 	
 }
 
-void GameObject::draw(ID3D11DeviceContext* _DD)
+void draw(ID3D11DeviceContext* _DD)
 {
 	
 }
