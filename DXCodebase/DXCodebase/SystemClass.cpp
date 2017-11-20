@@ -1,10 +1,12 @@
 #include "SystemClass.h"
+#include "Scene.h"
 
 SystemClass::SystemClass()
 {
 	m_Input = 0;
 	m_Graphics = 0;
 }
+
 
 SystemClass::SystemClass(const SystemClass& other)
 {
@@ -23,6 +25,7 @@ bool SystemClass::Initialize()
 	int screenWidth, screenHeight;
 	bool result;
 
+	//m_game = std::make_unique<Game>();
 
 	// Initialize the width and height of the screen to zero before sending the variables into the function.
 	screenWidth = 0;
@@ -45,6 +48,8 @@ bool SystemClass::Initialize()
 	// Create the graphics object.  This object will handle rendering all the graphics for this application.
 	m_Graphics = std::make_unique<GraphicsClass>();
 
+	
+
 	if (!m_Graphics)
 	{
 		return false;
@@ -53,6 +58,14 @@ bool SystemClass::Initialize()
 	// Initialize the graphics object.
 	result = m_Graphics->Initialize(screenWidth, screenHeight, m_hwnd);
 	if (!result)
+	{
+		return false;
+	}
+
+	//Create the Scene
+	m_Scene = std::make_unique<Scene>(m_Graphics->getDirect3D()->GetDevice(), m_hwnd, m_hinstance);
+
+	if (!m_Scene)
 	{
 		return false;
 	}
@@ -126,7 +139,6 @@ bool SystemClass::Frame()
 {
 	bool result;
 
-
 	// Check if the user pressed escape and wants to exit the application.
 	if (m_Input->IsKeyDown(VK_ESCAPE))
 	{
@@ -135,6 +147,12 @@ bool SystemClass::Frame()
 
 	// Do the frame processing for the graphics object.
 	result = m_Graphics->Frame();
+	if (!result)
+	{
+		return false;
+	}
+
+	result = m_Scene->Tick();
 	if (!result)
 	{
 		return false;

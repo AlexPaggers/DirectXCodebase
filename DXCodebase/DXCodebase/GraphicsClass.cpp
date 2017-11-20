@@ -158,7 +158,7 @@ bool GraphicsClass::Render()
 
 
 	// Render the model using the color shader.
-	result = m_ColorShader->Render(m_Direct3D->GetDeviceContext(), m_Model->GetIndexCount(), worldMatrix, viewMatrix, projectionMatrix);
+	result = m_ColorShader->Render(m_Direct3D->GetDeviceContext(), 3, worldMatrix, viewMatrix, projectionMatrix);
 	if (!result)
 	{
 		return false;

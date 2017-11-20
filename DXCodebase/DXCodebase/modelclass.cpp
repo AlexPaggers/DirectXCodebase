@@ -1,4 +1,5 @@
 #include "modelclass.h"
+#include <d3d10.h>
 
 ModelClass::ModelClass()
 {
@@ -9,6 +10,7 @@ ModelClass::ModelClass()
 
 ModelClass::ModelClass(const ModelClass& other)
 {
+	
 }
 
 
@@ -189,6 +191,16 @@ void ModelClass::RenderBuffers(ID3D11DeviceContext* deviceContext)
 	deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
 	return;
+}
+
+void tick(GameData* _GD)
+{
+	
+}
+
+void draw(ID3D11DeviceContext* _DD)
+{
+	
 }
 
 

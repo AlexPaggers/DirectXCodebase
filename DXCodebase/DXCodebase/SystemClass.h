@@ -7,6 +7,8 @@
 #include "inputclass.h"
 #include "graphicsclass.h"
 #include <memory>
+#include "game.h"
+#include "Scene.h"
 
 #define WIN32_LEAN_AND_MEAN
 
@@ -38,6 +40,8 @@ private:
 
 	//GraphicsClass* m_Graphics;
 	std::unique_ptr<GraphicsClass> m_Graphics;
+
+	std::unique_ptr<Scene> m_Scene;
 };
 
 static LRESULT CALLBACK WndProc(HWND, UINT, WPARAM, LPARAM);

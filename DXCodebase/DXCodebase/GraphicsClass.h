@@ -20,6 +20,7 @@ public:
 	~GraphicsClass();
 
 	bool Initialize(int, int, HWND);
+	D3DClass* getDirect3D() { return m_Direct3D; }
 	void Shutdown();
 	bool Frame();
 
