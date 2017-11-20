@@ -48,9 +48,12 @@
     <ClCompile Include="GameObject.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+<<<<<<< HEAD
     <ClCompile Include="Scene.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+=======
+>>>>>>> c5cdf751d494af544a85e377889bf5034825443c
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="SystemClass.h">
@@ -86,9 +89,12 @@
     <ClInclude Include="MathVector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+<<<<<<< HEAD
     <ClInclude Include="Scene.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+=======
+>>>>>>> c5cdf751d494af544a85e377889bf5034825443c
   </ItemGroup>
   <ItemGroup>
     <None Include="color.vs">

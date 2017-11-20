@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿  GameObject.cpp
   C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
   GraphicsClass.cpp
@@ -21,3 +22,35 @@ c:\users\alex pagliarini\documents\github\directxcodebase\dxcodebase\dxcodebase\
   Finished generating code
   DXCodebase.vcxproj -> C:\Users\Alex Pagliarini\Documents\GitHub\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.exe
   DXCodebase.vcxproj -> C:\Users\Alex Pagliarini\Documents\GitHub\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.pdb (Full PDB)
+=======
+﻿Build started 16/11/2017 21:28:51.
+     1>Project "D:\DirectXCodebase\DXCodebase\DXCodebase\DXCodebase.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt GameObject.cpp modelclass.cpp
+         GameObject.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         modelclass.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.lib" /MACHINE:X64 x64\Release\cameraclass.obj
+         x64\Release\colorshaderclass.obj
+         x64\Release\d3dclass.obj
+         x64\Release\game.obj
+         x64\Release\GameObject.obj
+         x64\Release\GraphicsClass.obj
+         x64\Release\InputClass.obj
+         x64\Release\main.obj
+         x64\Release\modelclass.obj
+         x64\Release\SystemClass.obj
+         Generating code
+         2 of 402 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           2 functions had inline decision re-evaluated but remain unchanged
+         Finished generating code
+         DXCodebase.vcxproj -> D:\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.exe
+     1>Done Building Project "D:\DirectXCodebase\DXCodebase\DXCodebase\DXCodebase.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.52
+>>>>>>> c5cdf751d494af544a85e377889bf5034825443c

@@ -25,7 +25,11 @@ bool SystemClass::Initialize()
 	int screenWidth, screenHeight;
 	bool result;
 
+<<<<<<< HEAD
 	//m_game = std::make_unique<Game>();
+=======
+	m_game = std::make_unique<Game>();
+>>>>>>> c5cdf751d494af544a85e377889bf5034825443c
 
 	// Initialize the width and height of the screen to zero before sending the variables into the function.
 	screenWidth = 0;
@@ -139,6 +143,11 @@ bool SystemClass::Frame()
 {
 	bool result;
 
+<<<<<<< HEAD
+=======
+	m_game->tick();
+
+>>>>>>> c5cdf751d494af544a85e377889bf5034825443c
 	// Check if the user pressed escape and wants to exit the application.
 	if (m_Input->IsKeyDown(VK_ESCAPE))
 	{
