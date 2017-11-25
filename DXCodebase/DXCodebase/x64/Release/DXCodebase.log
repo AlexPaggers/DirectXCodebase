@@ -1,36 +1,31 @@
-<<<<<<< HEAD
-﻿  GameObject.cpp
-  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  GraphicsClass.cpp
-  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-  main.cpp
-  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\alex pagliarini\documents\github\directxcodebase\dxcodebase\dxcodebase\Scene.h(6): warning C4099: 'GameData': type name first seen using 'struct' now seen using 'class'
-  c:\users\alex pagliarini\documents\github\directxcodebase\dxcodebase\dxcodebase\GameData.h(18): note: see declaration of 'GameData'
-  Scene.cpp
-  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\alex pagliarini\documents\github\directxcodebase\dxcodebase\dxcodebase\GameData.h(18): warning C4099: 'GameData': type name first seen using 'class' now seen using 'struct'
-  c:\users\alex pagliarini\documents\github\directxcodebase\dxcodebase\dxcodebase\GameData.h(17): note: see declaration of 'GameData'
-  SystemClass.cpp
-  C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
-c:\users\alex pagliarini\documents\github\directxcodebase\dxcodebase\dxcodebase\Scene.h(6): warning C4099: 'GameData': type name first seen using 'struct' now seen using 'class'
-  c:\users\alex pagliarini\documents\github\directxcodebase\dxcodebase\dxcodebase\GameData.h(18): note: see declaration of 'GameData'
-  Generating code
-  27 of 390 functions ( 6.9%) were compiled, the rest were copied from previous compilation.
-    0 functions were new in current compilation
-    4 functions had inline decision re-evaluated but remain unchanged
-  Finished generating code
-  DXCodebase.vcxproj -> C:\Users\Alex Pagliarini\Documents\GitHub\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.exe
-  DXCodebase.vcxproj -> C:\Users\Alex Pagliarini\Documents\GitHub\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.pdb (Full PDB)
-=======
-﻿Build started 16/11/2017 21:28:51.
+﻿Build started 25/11/2017 17:02:34.
      1>Project "D:\DirectXCodebase\DXCodebase\DXCodebase\DXCodebase.vcxproj" on node 2 (Build target(s)).
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt GameObject.cpp modelclass.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /Oi /GL /D NDEBUG /D _WINDOWS /D _UNICODE /D UNICODE /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt cameraclass.cpp colorshaderclass.cpp d3dclass.cpp game.cpp GameObject.cpp GraphicsClass.cpp InputClass.cpp main.cpp modelclass.cpp Scene.cpp SystemClass.cpp
+         cameraclass.cpp
+         colorshaderclass.cpp
+         d3dclass.cpp
+         game.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
          GameObject.cpp
          C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         GraphicsClass.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         InputClass.cpp
+         main.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>d:\directxcodebase\dxcodebase\dxcodebase\Scene.h(6): warning C4099: 'GameData': type name first seen using 'struct' now seen using 'class'
+         d:\directxcodebase\dxcodebase\dxcodebase\GameData.h(18): note: see declaration of 'GameData'
          modelclass.cpp
          C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+         Scene.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>d:\directxcodebase\dxcodebase\dxcodebase\GameData.h(18): warning C4099: 'GameData': type name first seen using 'class' now seen using 'struct'
+         d:\directxcodebase\dxcodebase\dxcodebase\GameData.h(17): note: see declaration of 'GameData'
+         SystemClass.cpp
+         C:\Program Files (x86)\Windows Kits\8.1\Include\um\dinput.h: DIRECTINPUT_VERSION undefined. Defaulting to version 0x0800
+     1>d:\directxcodebase\dxcodebase\dxcodebase\Scene.h(6): warning C4099: 'GameData': type name first seen using 'struct' now seen using 'class'
+         d:\directxcodebase\dxcodebase\dxcodebase\GameData.h(18): note: see declaration of 'GameData'
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.pdb" /SUBSYSTEM:WINDOWS /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.lib" /MACHINE:X64 x64\Release\cameraclass.obj
          x64\Release\colorshaderclass.obj
@@ -41,16 +36,14 @@ c:\users\alex pagliarini\documents\github\directxcodebase\dxcodebase\dxcodebase\
          x64\Release\InputClass.obj
          x64\Release\main.obj
          x64\Release\modelclass.obj
+         x64\Release\Scene.obj
          x64\Release\SystemClass.obj
          Generating code
-         2 of 402 functions ( 0.5%) were compiled, the rest were copied from previous compilation.
-           0 functions were new in current compilation
-           2 functions had inline decision re-evaluated but remain unchanged
+         All 383 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
          Finished generating code
          DXCodebase.vcxproj -> D:\DirectXCodebase\DXCodebase\x64\Release\DXCodebase.exe
      1>Done Building Project "D:\DirectXCodebase\DXCodebase\DXCodebase\DXCodebase.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.52
->>>>>>> c5cdf751d494af544a85e377889bf5034825443c
+Time Elapsed 00:00:05.94

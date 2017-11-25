@@ -17,10 +17,10 @@ public:
 	bool Draw(ID3D11DeviceContext* context);
 
 private:
-	GameData* m_GD;
+	GameData* m_SceneData;
 	HWND m_hWnd;
 	ID3D11Device* device;
 	ID3D11DeviceContext* pd3dImmediateContext;
-	std::vector<GameObject*> m_gameObjects;
+	std::vector<GameObject*> m_GameObjects;
 	ModelClass* m_Model;
 };

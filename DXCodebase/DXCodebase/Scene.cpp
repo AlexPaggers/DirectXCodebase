@@ -18,11 +18,6 @@ Scene::~Scene()
 
 bool Scene::Tick()
 {
-	for (auto &_gameObject : m_gameObjects)
-	{
-		_gameObject->tick(m_GD);
-	}
-
 	Draw(pd3dImmediateContext);
 	return true;
 }
