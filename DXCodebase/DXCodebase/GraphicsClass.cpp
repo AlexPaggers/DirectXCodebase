@@ -19,6 +19,11 @@ GraphicsClass::~GraphicsClass()
 {
 }
 
+ColorShaderClass * GraphicsClass::getShader()
+{
+	return m_ColorShader;
+}
+
 
 bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 {

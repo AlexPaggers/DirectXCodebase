@@ -49,7 +49,7 @@ bool ColorShaderClass::Render(ID3D11DeviceContext* deviceContext, int indexCount
 {
 	bool result;
 
-
+	worldMatrix = m_sWorldMat;
 	// Set the shader parameters that it will use for rendering.
 	result = SetShaderParameters(deviceContext, worldMatrix, viewMatrix, projectionMatrix);
 	if (!result)

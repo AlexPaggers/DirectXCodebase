@@ -24,8 +24,8 @@ public:
 
 	bool Initialize(ID3D11Device*);
 	void Shutdown();
-	void Render(ID3D11DeviceContext*);
-
+	void Draw(ID3D11DeviceContext*);
+	void Tick(GameData* _GD);
 	int GetIndexCount();
 
 private:

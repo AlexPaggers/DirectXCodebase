@@ -42,6 +42,11 @@ void ModelClass::Shutdown()
 
 	return;
 }
+//
+//void ModelClass::tick(GameData * _GD)
+//{
+//	GameObject::tick(_GD);
+//}
 
 void ModelClass::ShutdownBuffers()
 {
@@ -62,7 +67,7 @@ void ModelClass::ShutdownBuffers()
 	return;
 }
 
-void ModelClass::Render(ID3D11DeviceContext* deviceContext)
+void ModelClass::Draw(ID3D11DeviceContext* deviceContext)
 {
 	// Put the vertex and index buffers on the graphics pipeline to prepare them for drawing.
 	RenderBuffers(deviceContext);
@@ -70,6 +75,11 @@ void ModelClass::Render(ID3D11DeviceContext* deviceContext)
 	return;
 }
 
+
+void ModelClass::Tick(GameData * _GD)
+{
+	GameObject::Tick(_GD);
+}
 
 int ModelClass::GetIndexCount()
 {
@@ -191,16 +201,6 @@ void ModelClass::RenderBuffers(ID3D11DeviceContext* deviceContext)
 	deviceContext->IASetPrimitiveTopology(D3D11_PRIMITIVE_TOPOLOGY_TRIANGLELIST);
 
 	return;
-}
-
-void tick(GameData* _GD)
-{
-	
-}
-
-void draw(ID3D11DeviceContext* _DD)
-{
-	
 }
 
 

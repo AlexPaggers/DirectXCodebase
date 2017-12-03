@@ -1,10 +1,12 @@
 #pragma once
 #include <d3d11.h>
 #include <vector>
+#include <DirectXMath.h>
 
 class GameObject;
-class GameData;
+struct GameData;
 class ModelClass;
+
 
 class Scene
 {
@@ -16,6 +18,9 @@ public:
 
 	bool Draw(ID3D11DeviceContext* context);
 
+	DirectX::XMMATRIX getMatrices();
+
+
 private:
 	GameData* m_SceneData;
 	HWND m_hWnd;
@@ -23,4 +28,7 @@ private:
 	ID3D11DeviceContext* pd3dImmediateContext;
 	std::vector<GameObject*> m_GameObjects;
 	ModelClass* m_Model;
+
+protected:
+	DWORD m_playTime;
 };

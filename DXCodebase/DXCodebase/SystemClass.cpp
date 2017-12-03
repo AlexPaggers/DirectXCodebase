@@ -1,5 +1,8 @@
 #include "SystemClass.h"
+
 #include "Scene.h"
+
+
 
 SystemClass::SystemClass()
 {
@@ -134,6 +137,11 @@ void SystemClass::Run()
 	return;
 }
 
+void SystemClass::UpdateDeltaTime()
+{
+
+}
+
 
 bool SystemClass::Frame()
 {
@@ -151,12 +159,14 @@ bool SystemClass::Frame()
 	{
 		return false;
 	}
+	m_Graphics->getShader()->setWorldMatrix(m_Scene->getMatrices());
 
 	result = m_Scene->Tick();
 	if (!result)
 	{
 		return false;
 	}
+
 
 	return true;
 }
