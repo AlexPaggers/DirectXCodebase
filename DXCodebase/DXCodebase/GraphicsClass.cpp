@@ -56,19 +56,19 @@ bool GraphicsClass::Initialize(int screenWidth, int screenHeight, HWND hwnd)
 	m_Camera->SetPosition(0.0f, 0.0f, -5.0f);
 
 	// Create the model object.
-	m_Model = new ModelClass;
-	if (!m_Model)
-	{
-		return false;
-	}
+	//m_Model = new ModelClass(Vector3(0, 0, 0), Vector3(1, 1, 1));
+	//if (!m_Model)
+	//{
+	//	return false;
+	//}
 
-	// Initialize the model object.
-	result = m_Model->Initialize(m_Direct3D->GetDevice());
-	if (!result)
-	{
-		MessageBox(hwnd, L"Could not initialize the model object.", L"Error", MB_OK);
-		return false;
-	}
+	//// Initialize the model object.
+	//result = m_Model->Initialize(m_Direct3D->GetDevice());
+	//if (!result)
+	//{
+	//	MessageBox(hwnd, L"Could not initialize the model object.", L"Error", MB_OK);
+	//	return false;
+	//}
 
 	// Create the color shader object.
 	m_ColorShader = new ColorShaderClass;

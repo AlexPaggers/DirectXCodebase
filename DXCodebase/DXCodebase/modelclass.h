@@ -18,7 +18,7 @@ private:
 	};
 
 public:
-	ModelClass();
+	ModelClass(Vector3 _startPoint, Vector3 _endPoint);
 	ModelClass(const ModelClass&);
 	~ModelClass();
 
@@ -36,6 +36,9 @@ private:
 private:
 	ID3D11Buffer *m_vertexBuffer, *m_indexBuffer;
 	int m_vertexCount, m_indexCount;
+
+	Vector3 m_startPoint, m_endPoint;
+
 };
 
 #endif

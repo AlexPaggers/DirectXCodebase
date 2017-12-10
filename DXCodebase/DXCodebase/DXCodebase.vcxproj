@@ -160,6 +160,7 @@
     <ClInclude Include="GameData.h" />
     <ClInclude Include="GameObject.h" />
     <ClInclude Include="GraphicsClass.h" />
+    <ClInclude Include="HairContainer.h" />
     <ClInclude Include="InputClass.h" />
     <ClInclude Include="MathVector.h" />
     <ClInclude Include="modelclass.h" />

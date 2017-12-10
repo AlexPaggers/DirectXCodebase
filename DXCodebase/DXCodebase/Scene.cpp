@@ -11,7 +11,7 @@ Scene::Scene(ID3D11Device* _pd3dDevice, HWND _hWnd, HINSTANCE _hInstance)
 	m_hWnd = _hWnd;
 
 	m_SceneData = new GameData();
-	m_Model = new ModelClass;
+	m_Model = new ModelClass(Vector3(0,0,0), Vector3(1,1,1));
 	m_Model->Initialize(_pd3dDevice);
 	m_GameObjects.push_back(m_Model);
 }
@@ -28,7 +28,7 @@ bool Scene::Tick()
 	
 	for (auto& go : m_GameObjects)
 	{
-		go->SetAcceleration(Vector3(1, 0, 0));
+		go->SetAcceleration(Vector3(0, 0, 0));
 		//go->SetPos(Vector3(go->GetPos().x + 0.01f, go->GetPos().y, go->GetPos().z));
 		//go->SetRoll(go->GetRoll() + 0.01);
 		//go->SetScale(Vector3(go->GetScale().x, go->GetScale().y + 0.01f, go->GetScale().z));
@@ -42,7 +42,7 @@ bool Scene::Draw(ID3D11DeviceContext * context)
 {
 	for (auto& go : m_GameObjects)
 	{
-		m_Model->Draw(context);
+		go->Draw(context);
 	}
 	
 	return true;

@@ -1,10 +1,13 @@
 #include "modelclass.h"
 #include <d3d10.h>
 
-ModelClass::ModelClass()
+ModelClass::ModelClass(Vector3 _startPoint, Vector3 _endPoint)
 {
 	m_vertexBuffer = 0;
 	m_indexBuffer = 0;
+
+	m_startPoint = _startPoint;
+	m_endPoint = _endPoint;
 }
 
 
@@ -116,14 +119,12 @@ bool ModelClass::InitializeBuffers(ID3D11Device* device)
 	}
 
 	// Load the vertex array with data.
-	vertices[0].position = XMFLOAT3(-1.0f, -1.0f, 0.0f);  // Bottom left.
-	vertices[0].color = XMFLOAT4(0.0f, 3.0f, 0.0f, 0.0f);
+	vertices[0].position = XMFLOAT3(m_startPoint.x, m_startPoint.y, m_startPoint.z);  // Bottom left.
+	vertices[0].color = XMFLOAT4(0.0f, 0.0f, 0.0f, 0.0f);
 
-	vertices[1].position = XMFLOAT3(0.0f, 1.0f, 0.0f);  // Top middle.
-	vertices[1].color = XMFLOAT4(0.0f, 0.0f, 3.0f, 1.0f);
+	vertices[1].position = XMFLOAT3(m_endPoint.x, m_endPoint.y, m_endPoint.z);  // Top middle.
+	vertices[1].color = XMFLOAT4(0.0f, 0.0f, 0.0f, 0.0f);
 
-	//vertices[2].position = XMFLOAT3(1.0f, -1.0f, 0.0f);  // Bottom right.
-	//vertices[2].color = XMFLOAT4(3.0f, 0.0f, 0.0f, 1.0f);
 
 	// Load the index array with data.
 	indices[0] = 0;  // Bottom left.
